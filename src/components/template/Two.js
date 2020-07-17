@@ -1,8 +1,6 @@
-import React, { useState, useMemo, useEffect } from 'react';
-import { BroadcastChannel } from 'broadcast-channel';
-import styled, { keyframes } from 'styled-components';
-import { Colors } from '@blueprintjs/core';
-import logo from '../../asset/logo_wki.png';
+import React from 'react';
+import styled from 'styled-components';
+import logo from '../../asset/logo.png';
 
 const Component = ({ className, input, isHide, options }) => {
   return (
@@ -11,7 +9,7 @@ const Component = ({ className, input, isHide, options }) => {
         paddingBottom: options.paddingBottom
       }}>
       <div className="logo">
-        <img alt="Logo" src={logo} />
+        <img alt="logo" src={input.logo || logo} />
       </div>
       <div className="wrapper">
         <div className="title-wrapper">
@@ -42,11 +40,14 @@ const LowerThird = styled(Component)`
     z-index: 5;
     height: 100px;
     width: 100px;
-    padding: 5px;
     background-color: white;
     border-radius: 50%;
     > img {
+      padding: 5px;
       height: 100%;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
     }
   }
   > .wrapper {

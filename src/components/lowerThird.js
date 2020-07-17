@@ -20,7 +20,6 @@ const Component = ({ className }) => {
       setIsHide(msg);
     }
     channelOptions.onmessage = msg => {
-      console.log(msg);
       setOptions(msg);
     }
     return () => {

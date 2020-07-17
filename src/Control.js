@@ -6,7 +6,7 @@ import { Tabs, Tab } from '@blueprintjs/core';
 function Control() {
   return (
     <div className="panel">
-      <Tabs defaultSelectedTabId={"rtc"}>
+      <Tabs defaultSelectedTabId={"ltc"}>
         <Tab id="ltc" title="Lower Third" panel={<LowerThirdControl />} />
         <Tab id="rtc" title="Running Text" panel={<RunningTextControl />} />
       </Tabs>

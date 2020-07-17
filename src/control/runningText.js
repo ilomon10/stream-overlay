@@ -11,6 +11,7 @@ const Component = ({ className }) => {
     direction: 'left',
     speed: 0.03,
     paddingBottom: 36,
+    childMargin: 100,
     textSize: 24,
     textWeight: 'normal',
     textStroke: 0,
@@ -85,6 +86,17 @@ const Component = ({ className }) => {
           }}
           min={0} max={50}
           value={options.paddingBottom} />
+      </FormGroup>
+      <FormGroup
+        label="Space Between">
+        <NumericInput fill
+          onValueChange={(v) => {
+            setOptions((opt) => ({
+              ...opt, childMargin: v
+            }))
+          }}
+          min={0} max={250}
+          value={options.childMargin} />
       </FormGroup>
       <FormGroup
         label="Text Size">

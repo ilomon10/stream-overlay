@@ -11,6 +11,7 @@ const Component = ({ className }) => {
     direction: 'left',
     speed: 0.03,
     paddingBottom: 36,
+    childMargin: 100,
     textSize: 24,
     textWeight: 'normal',
     textStroke: 0,
@@ -52,7 +53,7 @@ const Component = ({ className }) => {
             direction={options.direction}
             speed={options.speed}
             delay={1000}
-            childMargin={20}>{text}</Marquee>
+            childMargin={options.childMargin}>{text}</Marquee>
           <EXPTime />
         </>}
     </div>
