@@ -16,7 +16,7 @@
     "react-double-marquee": "^1.0.5",
     "react-dropzone": "^11.0.1",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "3.4.1",
+    "react-scripts": "5.0.1",
     "styled-components": "^5.1.1"
   },
   "scripts": {
